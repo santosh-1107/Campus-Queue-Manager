@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-navy text-offwhite font-sans antialiased;
+}
+
+/* Departure-board row: hairline divider, no rounded corners, no shadow */
+.board-row {
+  @apply flex flex-wrap items-center justify-between gap-2 py-4 border-b border-white/10;
+}
+
+.board-number {
+  @apply font-mono text-xl sm:text-2xl tabular-nums tracking-tight;
+}
+
+.label-eyebrow {
+  @apply text-xs text-slate;
+}
